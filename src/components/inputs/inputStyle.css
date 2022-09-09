@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap');
+
+.cus__inp {
+  font-family: 'Poppins', sans-serif;
+}
+.cus__inp span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}

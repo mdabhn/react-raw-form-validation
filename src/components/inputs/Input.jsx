@@ -1,6 +1,7 @@
 import React, { useId } from 'react'
+import './inputStyle.css'
 
-const Input = ({ type, name, id, message }) => {
+const Input = ({ type, name, id }) => {
   const uuid = useId()
   const AVAILAVLE_TYPES = [
     'button',
@@ -33,9 +34,21 @@ const Input = ({ type, name, id, message }) => {
 
   return (
     <>
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <input type={inputType} name={inputName} id={inputId} />
-        <span id={inputId + 'span'}>{message && message}</span>
+      <div
+        style={{ display: 'flex', flexDirection: 'column', padding: '2px' }}
+        className='cus__inp'
+      >
+        <input
+          type={inputType}
+          name={inputName}
+          id={inputId}
+          style={{
+            padding: '10px',
+            borderRadius: '5px',
+            border: '1px solid black',
+          }}
+        />
+        <span id={inputId + 'span'} style={{ marginTop: '2px' }}></span>
       </div>
     </>
   )
